@@ -7,21 +7,26 @@ module regfile (
     reg [31:0] registradores [31:0];
 
     initial begin
-        $readmemb("registers.mem", registers);
         registradores[0] = 0;
     end
 
     always @(ReadAddr1 or Clock) begin
-        ReadData1 = registradores[ReadAddr1]
+        ReadData1 = registradores[ReadAddr1];
     end
 
     always @(ReadAddr2 or Clock) begin
-        ReadData2 = registradores[ReadAddr2]
+        ReadData2 = registradores[ReadAddr2];
     end
 
     always @(posedge Clock) begin
         if (RegWrite && WriteAddr) begin
-            registradores[WriteAddr] <= WriteData
+            registradores[WriteAddr] <= WriteData;
+        end
+    end
+
+    always @(reset) begin
+        for(i=0;i<32;i=i+1) begin
+            registradores[i] = 0;
         end
     end
 
