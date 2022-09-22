@@ -19,12 +19,12 @@ module regfile (
     end
 
     always @(posedge Clock) begin
-        if (RegWrite && WriteAddr) begin
+        if (RegWrite && WriteAddr != 32'b0) begin
             registradores[WriteAddr] <= WriteData;
         end
     end
 
-    always @(reset) begin
+    always @(posedge reset) begin
         for(i=0;i<32;i=i+1) begin
             registradores[i] = 0;
         end
