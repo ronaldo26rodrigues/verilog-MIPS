@@ -24,7 +24,7 @@ module regfile (
         end
     end
 
-    always @(posedge reset) begin
+    always @(posedge Reset) begin
         for(i=0;i<32;i=i+1) begin
             registradores[i] = 0;
         end
