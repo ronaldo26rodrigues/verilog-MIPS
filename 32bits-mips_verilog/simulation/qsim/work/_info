@@ -1,0 +1,80 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Vicen/Downloads/32bits-mips_verilog/simulation/qsim
+vhard_block
+Z0 !s110 1663869286
+!i10b 1
+!s100 gjSlclU_;oUzEeiV>:D;H3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IUdoTOmQ9:R0_k8>ob3L=N2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/Vicen/Downloads/TESTE/32bits-mips_verilog/simulation/qsim
+Z4 w1663869285
+Z5 8mips_verilog.vo
+Z6 Fmips_verilog.vo
+!i122 38
+L0 13059 34
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1663869285.000000
+Z9 !s107 mips_verilog.vo|
+Z10 !s90 -work|work|mips_verilog.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vmips_verilog
+R0
+!i10b 1
+!s100 ]>mn_MLN;JKX>QJj9LDYR2
+R1
+I06`1Dl7X:cCI4@UOgR5On3
+R2
+R3
+R4
+R5
+R6
+!i122 38
+L0 32 13026
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vmips_verilog_vlg_vec_tst
+R0
+!i10b 1
+!s100 PQ[e2c1R27AZRXJcCSOEb2
+R1
+Ihi?CXW@NaDZneSCM3MD<03
+R2
+R3
+w1663869284
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 39
+L0 30 42
+R7
+r1
+!s85 0
+31
+!s108 1663869286.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R11
+R12

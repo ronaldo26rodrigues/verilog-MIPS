@@ -1,0 +1,393 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "09/22/2022 11:02:50"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          mips_verilog
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module mips_verilog_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg CLK;
+reg RST;
+// wires                                               
+wire [31:0] ALUResult;
+wire [31:0] MemData;
+wire [31:0] PC;
+
+// assign statements (if any)                          
+mips_verilog i1 (
+// port map - connection between master ports and signals/registers   
+	.ALUResult(ALUResult),
+	.CLK(CLK),
+	.MemData(MemData),
+	.PC(PC),
+	.RST(RST)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// CLK
+initial
+begin
+	CLK = 1'b1;
+	# 1846;
+	repeat(2)
+	begin
+		CLK = 1'b0;
+		CLK = #3333 1'b1;
+		# 3333;
+	end
+	CLK = 1'b0;
+	CLK = #3333 1'b1;
+	CLK = #2860 1'b0;
+	CLK = #2100 1'b1;
+	CLK = #2900 1'b0;
+	CLK = #2100 1'b1;
+	CLK = #3741 1'b0;
+	CLK = #4300 1'b1;
+	CLK = #5700 1'b0;
+	CLK = #4300 1'b1;
+	CLK = #3488 1'b0;
+	CLK = #917 1'b1;
+	# 3932;
+	repeat(2)
+	begin
+		CLK = 1'b0;
+		CLK = #2734 1'b1;
+		# 3932;
+	end
+	CLK = 1'b0;
+	CLK = #2569 1'b1;
+	# 3866;
+	repeat(2)
+	begin
+		CLK = 1'b0;
+		CLK = #2800 1'b1;
+		# 3866;
+	end
+	CLK = 1'b0;
+	CLK = #2052 1'b1;
+	CLK = #2019 1'b0;
+	CLK = #2550 1'b1;
+	CLK = #2450 1'b0;
+	CLK = #2550 1'b1;
+	CLK = #431 1'b0;
+	CLK = #3010 1'b1;
+	CLK = #4100 1'b0;
+	CLK = #5900 1'b1;
+	CLK = #4100 1'b0;
+	CLK = #3942 1'b1;
+	# 2066;
+	repeat(2)
+	begin
+		CLK = 1'b0;
+		CLK = #4600 1'b1;
+		# 2066;
+	end
+	CLK = 1'b0;
+	CLK = #3550 1'b1;
+	CLK = #2067 1'b0;
+	CLK = #6000 1'b1;
+	CLK = #4000 1'b0;
+	CLK = #6000 1'b1;
+	CLK = #2267 1'b0;
+	CLK = #1900 1'b1;
+	CLK = #1433 1'b0;
+	CLK = #1900 1'b1;
+	CLK = #1433 1'b0;
+	CLK = #1900 1'b1;
+	CLK = #5072 1'b0;
+	CLK = #8000 1'b1;
+	CLK = #8321 1'b0;
+	CLK = #3933 1'b1;
+	CLK = #2733 1'b0;
+	CLK = #3933 1'b1;
+	CLK = #2733 1'b0;
+	CLK = #3933 1'b1;
+	CLK = #2442 1'b0;
+	CLK = #4978 1'b1;
+	CLK = #3200 1'b0;
+	CLK = #6800 1'b1;
+	CLK = #3200 1'b0;
+	CLK = #2533 1'b1;
+	CLK = #1800 1'b0;
+	CLK = #3200 1'b1;
+	CLK = #1800 1'b0;
+	CLK = #2489 1'b1;
+	CLK = #4135 1'b0;
+	CLK = #5100 1'b1;
+	CLK = #765 1'b0;
+	CLK = #3871 1'b1;
+	CLK = #4000 1'b0;
+	CLK = #6000 1'b1;
+	CLK = #4000 1'b0;
+	CLK = #5952 1'b1;
+	CLK = #4100 1'b0;
+	CLK = #5900 1'b1;
+	CLK = #4100 1'b0;
+	CLK = #5294 1'b1;
+	CLK = #1500 1'b0;
+	CLK = #3500 1'b1;
+	CLK = #1500 1'b0;
+	CLK = #5431 1'b1;
+	CLK = #3500 1'b0;
+	CLK = #2558 1'b1;
+	# 2599;
+	repeat(2)
+	begin
+		CLK = 1'b0;
+		CLK = #4067 1'b1;
+		# 2599;
+	end
+	CLK = 1'b0;
+	CLK = #5761 1'b1;
+	CLK = #3500 1'b0;
+	CLK = #3602 1'b1;
+	CLK = #2137 1'b0;
+	CLK = #10600 1'b1;
+	CLK = #7263 1'b0;
+	CLK = #1234 1'b1;
+	# 2266;
+	repeat(2)
+	begin
+		CLK = 1'b0;
+		CLK = #4400 1'b1;
+		# 2266;
+	end
+	CLK = 1'b0;
+	CLK = #13702 1'b1;
+	CLK = #6600 1'b0;
+	CLK = #5855 1'b1;
+	# 2133;
+	repeat(2)
+	begin
+		CLK = 1'b0;
+		CLK = #4533 1'b1;
+		# 2133;
+	end
+	CLK = 1'b0;
+	CLK = #5656 1'b1;
+	CLK = #6800 1'b0;
+	CLK = #12065 1'b1;
+	CLK = #7400 1'b0;
+	CLK = #10209 1'b1;
+	CLK = #4300 1'b0;
+	CLK = #5700 1'b1;
+	CLK = #4300 1'b0;
+	CLK = #7293 1'b1;
+	CLK = #1750 1'b0;
+	CLK = #3250 1'b1;
+	CLK = #1750 1'b0;
+	CLK = #1992 1'b1;
+	CLK = #3500 1'b0;
+	CLK = #6500 1'b1;
+	CLK = #3500 1'b0;
+	CLK = #5581 1'b1;
+	CLK = #1896 1'b0;
+	CLK = #6500 1'b1;
+	CLK = #3500 1'b0;
+	CLK = #6500 1'b1;
+	CLK = #1604 1'b0;
+	CLK = #699 1'b1;
+	# 2666;
+	repeat(2)
+	begin
+		CLK = 1'b0;
+		CLK = #4000 1'b1;
+		# 2666;
+	end
+	CLK = 1'b0;
+	CLK = #3303 1'b1;
+	CLK = #3928 1'b0;
+	CLK = #4800 1'b1;
+	CLK = #5200 1'b0;
+	CLK = #4800 1'b1;
+	CLK = #1272 1'b0;
+	CLK = #498 1'b1;
+	# 2999;
+	repeat(2)
+	begin
+		CLK = 1'b0;
+		CLK = #3667 1'b1;
+		# 2999;
+	end
+	CLK = 1'b0;
+	CLK = #3782 1'b1;
+	# 2266;
+	repeat(2)
+	begin
+		CLK = 1'b0;
+		CLK = #4400 1'b1;
+		# 2266;
+	end
+	CLK = 1'b0;
+	CLK = #7503 1'b1;
+	CLK = #5800 1'b0;
+	CLK = #4200 1'b1;
+	CLK = #5800 1'b0;
+	CLK = #1630 1'b1;
+	# 2733;
+	repeat(2)
+	begin
+		CLK = 1'b0;
+		CLK = #3933 1'b1;
+		# 2733;
+	end
+	CLK = 1'b0;
+	CLK = #2793 1'b1;
+	CLK = #539 1'b0;
+	CLK = #3400 1'b1;
+	CLK = #1600 1'b0;
+	CLK = #3400 1'b1;
+	CLK = #1061 1'b0;
+	CLK = #2476 1'b1;
+	CLK = #5900 1'b0;
+	CLK = #4100 1'b1;
+	CLK = #5900 1'b0;
+	CLK = #5876 1'b1;
+	CLK = #3500 1'b0;
+	CLK = #2248 1'b1;
+	CLK = #1421 1'b0;
+	CLK = #2100 1'b1;
+	CLK = #2900 1'b0;
+	CLK = #2100 1'b1;
+	CLK = #4503 1'b0;
+	CLK = #6900 1'b1;
+	CLK = #598 1'b0;
+	CLK = #5900 1'b1;
+	CLK = #3578 1'b0;
+	CLK = #4792 1'b1;
+	CLK = #3200 1'b0;
+	CLK = #2671 1'b1;
+	# 1599;
+	repeat(2)
+	begin
+		CLK = 1'b0;
+		CLK = #1734 1'b1;
+		# 1599;
+	end
+	CLK = 1'b0;
+	CLK = #2826 1'b1;
+	CLK = #4200 1'b0;
+	CLK = #5287 1'b1;
+	# 2533;
+	repeat(2)
+	begin
+		CLK = 1'b0;
+		CLK = #4133 1'b1;
+		# 2533;
+	end
+	CLK = 1'b0;
+	CLK = #2894 1'b1;
+	# 1358;
+	repeat(2)
+	begin
+		CLK = 1'b0;
+		CLK = #2934 1'b1;
+		# 3732;
+	end
+	CLK = 1'b0;
+	CLK = #2934 1'b1;
+	CLK = #2376 1'b0;
+	CLK = #2442 1'b1;
+	# 2333;
+	repeat(2)
+	begin
+		CLK = 1'b0;
+		CLK = #4333 1'b1;
+		# 2333;
+	end
+	CLK = 1'b0;
+	CLK = #2369 1'b1;
+	CLK = #2150 1'b0;
+	CLK = #2850 1'b1;
+	CLK = #2150 1'b0;
+	CLK = #2701 1'b1;
+	CLK = #1950 1'b0;
+	CLK = #3050 1'b1;
+	CLK = #1950 1'b0;
+	CLK = #2723 1'b1;
+	CLK = #3774 1'b0;
+	CLK = #5400 1'b1;
+	CLK = #4600 1'b0;
+	CLK = #5400 1'b1;
+	CLK = #826 1'b0;
+	CLK = #1449 1'b1;
+	CLK = #1550 1'b0;
+	CLK = #3450 1'b1;
+	CLK = #1550 1'b0;
+	CLK = #2001 1'b1;
+	CLK = #7624 1'b0;
+	CLK = #11200 1'b1;
+	CLK = #1888 1'b0;
+	CLK = #3134 1'b1;
+	CLK = #3532 1'b0;
+	CLK = #3134 1'b1;
+	CLK = #3532 1'b0;
+	CLK = #3134 1'b1;
+	CLK = #5099 1'b0;
+	CLK = #6200 1'b1;
+	CLK = #2825 1'b0;
+	CLK = #5000 1'b1;
+	CLK = #4022 1'b0;
+	CLK = #1367 1'b1;
+	CLK = #1966 1'b0;
+	CLK = #1367 1'b1;
+	CLK = #1966 1'b0;
+	CLK = #1367 1'b1;
+	CLK = #1643 1'b0;
+	CLK = #687 1'b1;
+	CLK = #4300 1'b0;
+	CLK = #5013 1'b1;
+	CLK = #736 1'b0;
+	CLK = #5200 1'b1;
+	CLK = #4800 1'b0;
+	CLK = #5200 1'b1;
+	CLK = #4064 1'b0;
+	CLK = #4856 1'b1;
+	CLK = #3600 1'b0;
+	CLK = #6400 1'b1;
+	CLK = #3600 1'b0;
+	CLK = #2859 1'b1;
+	# 3266;
+	repeat(2)
+	begin
+		CLK = 1'b0;
+		CLK = #3400 1'b1;
+		# 3266;
+	end
+	CLK = 1'b0;
+end 
+
+// RST
+initial
+begin
+	RST = 1'b0;
+end 
+endmodule
+
